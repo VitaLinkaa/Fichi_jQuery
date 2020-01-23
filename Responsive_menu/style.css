@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(102, 96, 97);
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+a {
+  color: floralwhite;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+ul, 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapp {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.desktop ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(148, 142, 142);
+  text-transform: uppercase;
+}
+
+.desktop li {
+  padding: 20px;
+}
+
+.desktop ul li:hover {
+  background-color: darkgray;
+}
+
+.desktop ul li {
+  margin-right: 5px;
+}
+
+.burger {
+  padding: 10px 20px;
+  display: block;
+}
+
+.burger a {
+  display: inline-block;
+}
+
+.burger span {
+  display: block;
+  margin: 5px;
+  width: 30px;  
+  height: 2px;
+  background-color: #fff;
+}
+
+.burger span:hover {
+  background-color: darkgray;
+}
+
+.mobile ul {
+  margin: 10px 20px;
+  width: 100px;
+  display: none;
+  background-color: rgb(148, 142, 142);
+}
+
+.mobile ul li {
+  padding: 10px 20px;
+}
+
+.mobile ul li:hover{
+  background-color: darkgray;
+}
+
+
+@media screen and (min-width: 760px){
+  .burger {
+    display: none;
+  }
+
+}
+@media screen and (max-width: 760px){
+  .bar__desktop {
+    display: none;
+  }
+  .mobile ul {
+    display: block;
+  }
+}
